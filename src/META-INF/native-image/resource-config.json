@@ -1,13 +1,25 @@
 {
   "resources":{
   "includes":[
-    {"pattern":"\\QMETA-INF/services/com.sun.tools.javac.platform.PlatformProvider\\E"}, 
-    {"pattern":"\\QMETA-INF/services/java.nio.file.spi.FileSystemProvider\\E"}
+    {
+      "pattern":"\\QMETA-INF/services/com.sun.tools.javac.platform.PlatformProvider\\E"
+    }, 
+    {
+      "pattern":"\\QMETA-INF/services/java.nio.file.spi.FileSystemProvider\\E"
+    }
   ]},
   "bundles":[
-    {"name":"com.sun.tools.javac.resources.compiler"}, 
-    {"name":"com.sun.tools.javac.resources.ct"}, 
-    {"name":"com.sun.tools.javac.resources.javac"}, 
-    {"name":"com.sun.tools.javac.resources.version"}
+    {
+      "name":"com.sun.tools.javac.resources.compiler"
+    }, 
+    {
+      "name":"com.sun.tools.javac.resources.ct"
+    }, 
+    {
+      "name":"com.sun.tools.javac.resources.javac"
+    }, 
+    {
+      "name":"com.sun.tools.javac.resources.version"
+    }
   ]
 }
