@@ -25,11 +25,16 @@ More options could probably be used at build time and at runtime but this is a g
 
 To build the final executable, you need a jar with everyting that's under `src`. Though module-info isn't mandatory.
 Set `GRAALVM_HOME` to your graalvm installation dir. At runtime, please set `JAVAC_HOME` to the home of a jdk that is
-the same version as GraalVM (which can be GraalVM). You can still compile for versions lower than the one javac-native
-was compiled with by using the `--system` standard javac option.
+the same version as GraalVM (which can be GraalVM).
+
+```shell
+native-image -jar javac-native.jar javac-native
+```
 
 The final executable is 100% compatible with javac cli. You can also use additional properties for the native-image
-runtime.
+runtime. You can still use javac-native to compile for versions lower than the one it was compiled with by using
+the `--system`
+option.
 
 ## Benchmarks
 

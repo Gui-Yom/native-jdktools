@@ -3,7 +3,4 @@ temp/
 .idea/
 *.class
 *.jar
-jvm_properties.txt
-native_properties.txt
-native-image_options.txt
 *.iml
