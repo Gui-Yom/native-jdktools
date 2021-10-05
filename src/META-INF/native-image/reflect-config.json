@@ -1,2 +1,179 @@
 [
+  {
+    "name": "[Ljdk.tools.jlink.internal.PerfectHashBuilder$Bucket;"
+  },
+  {
+    "name": "[Ljdk.tools.jlink.internal.PerfectHashBuilder$Entry;"
+  },
+  {
+    "name": "com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "com.sun.tools.classfile.Code_attribute",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": [
+          "com.sun.tools.classfile.ClassReader",
+          "int",
+          "int"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "com.sun.tools.classfile.LineNumberTable_attribute",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": [
+          "com.sun.tools.classfile.ClassReader",
+          "int",
+          "int"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "com.sun.tools.classfile.SourceFile_attribute",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": [
+          "com.sun.tools.classfile.ClassReader",
+          "int",
+          "int"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "com.sun.xml.internal.stream.XMLOutputFactoryImpl",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "java.security.SecureRandomParameters"
+  },
+  {
+    "name": "javax.xml.stream.XMLStreamWriter",
+    "methods": [
+      {
+        "name": "close",
+        "parameterTypes": []
+      },
+      {
+        "name": "flush",
+        "parameterTypes": []
+      },
+      {
+        "name": "writeAttribute",
+        "parameterTypes": [
+          "java.lang.String",
+          "java.lang.String"
+        ]
+      },
+      {
+        "name": "writeCharacters",
+        "parameterTypes": [
+          "java.lang.String"
+        ]
+      },
+      {
+        "name": "writeDefaultNamespace",
+        "parameterTypes": [
+          "java.lang.String"
+        ]
+      },
+      {
+        "name": "writeEndDocument",
+        "parameterTypes": []
+      },
+      {
+        "name": "writeEndElement",
+        "parameterTypes": []
+      },
+      {
+        "name": "writeNamespace",
+        "parameterTypes": [
+          "java.lang.String",
+          "java.lang.String"
+        ]
+      },
+      {
+        "name": "writeStartDocument",
+        "parameterTypes": []
+      },
+      {
+        "name": "writeStartElement",
+        "parameterTypes": [
+          "java.lang.String"
+        ]
+      },
+      {
+        "name": "writeStartElement",
+        "parameterTypes": [
+          "java.lang.String",
+          "java.lang.String"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "jdk.javadoc.doclet.StandardDoclet",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "sun.security.provider.DRBG",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": [
+          "java.security.SecureRandomParameters"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "sun.security.provider.MD5",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "sun.security.provider.SHA",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "sun.security.provider.SHA2$SHA256",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      }
+    ]
+  }
 ]

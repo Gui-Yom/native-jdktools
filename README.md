@@ -1,4 +1,4 @@
-# javac-native
+# native-jdktools
 
 An experiment with generating a native-image for javac. A desirable performance metric for developer tools is speed,
 however javac takes ages just to start. We aim to fix that by building a native-image with a javac wrapper.

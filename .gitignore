@@ -1,6 +1,10 @@
 out/
-temp/
+test/build
+test/jar
+test/javadoc
+test/jlink
 .idea/
 *.class
 *.jar
 *.iml
+*.exe

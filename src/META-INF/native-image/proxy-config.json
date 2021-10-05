@@ -1,2 +1,7 @@
 [
+  {
+    "interfaces": [
+      "javax.xml.stream.XMLStreamWriter"
+    ]
+  }
 ]

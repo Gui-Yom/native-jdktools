@@ -1,25 +1,74 @@
 {
-  "resources":{
-  "includes":[
+  "resources": {
+    "includes": [
+      {
+        "pattern": "\\QMETA-INF/services/java.nio.file.spi.FileSystemProvider\\E"
+      }
+    ]
+  },
+  "bundles": [
     {
-      "pattern":"\\QMETA-INF/services/com.sun.tools.javac.platform.PlatformProvider\\E"
-    }, 
+      "name": "com.sun.tools.javac.resources.compiler"
+    },
     {
-      "pattern":"\\QMETA-INF/services/java.nio.file.spi.FileSystemProvider\\E"
-    }
-  ]},
-  "bundles":[
+      "name": "com.sun.tools.javac.resources.ct"
+    },
     {
-      "name":"com.sun.tools.javac.resources.compiler"
-    }, 
+      "name": "com.sun.tools.javac.resources.javac"
+    },
     {
-      "name":"com.sun.tools.javac.resources.ct"
-    }, 
+      "name": "com.sun.tools.javac.resources.version"
+    },
     {
-      "name":"com.sun.tools.javac.resources.javac"
-    }, 
+      "name": "com.sun.tools.javap.resources.javap"
+    },
     {
-      "name":"com.sun.tools.javac.resources.version"
+      "name": "com.sun.tools.javap.resources.version"
+    },
+    {
+      "name": "com.sun.tools.jdeps.resources.jdeps"
+    },
+    {
+      "name": "com.sun.tools.jdeps.resources.jdkinternals"
+    },
+    {
+      "name": "com.sun.tools.jdeps.resources.version"
+    },
+    {
+      "name": "jdk.javadoc.internal.doclets.formats.html.resources.standard"
+    },
+    {
+      "name": "jdk.javadoc.internal.doclets.toolkit.resources.doclets"
+    },
+    {
+      "name": "jdk.javadoc.internal.doclint.resources.doclint"
+    },
+    {
+      "name": "jdk.javadoc.internal.tool.resources.javadoc"
+    },
+    {
+      "name": "jdk.javadoc.internal.tool.resources.version"
+    },
+    {
+      "name": "jdk.jpackage.internal.resources.HelpResources"
+    },
+    {
+      "name": "jdk.jpackage.internal.resources.MainResources"
+    },
+    {
+      "name": "jdk.jpackage.internal.resources.WinResources"
+    },
+    {
+      "name": "jdk.tools.jlink.resources.jlink"
+    },
+    {
+      "name": "jdk.tools.jlink.resources.plugins"
+    },
+    {
+      "name": "jdk.tools.jmod.resources.jmod"
+    },
+    {
+      "name": "sun.tools.jar.resources.jar"
     }
   ]
 }
