@@ -1,13 +1,13 @@
 # native-jdktools
 
-An experiment with generating a native-image for javac. A desirable performance metric for developer tools is speed,
-however javac takes ages just to start. We aim to fix that by building a native-image with a javac wrapper.
+An experiment with generating a GraalVM native-image for every jdk tool. A desirable performance metric for a developer
+tools is speed, however something like javac takes ages just to start.
 
 *This was fucking hard*
 
-javac need to read the jdk module files and requires the `jrt:` file system provider which is disabled by default. It
-also requires the `jimage` native library to map the modules file in memory but for some reasons it doesn't work and end
-up in a `UnsatisfiedLinkError` so we need to disallow using it.
+A tool like javac need to read the jdk module files and requires the `jrt:` file system provider which is disabled by
+default. It also requires the `jimage` native library to map the modules file in memory but for some reasons it doesn't
+work and end up in a `UnsatisfiedLinkError` so we need to disallow using it.
 
 ## native-image options
 
@@ -23,19 +23,21 @@ option                       |justification
 
 More options could probably be used at build time and at runtime but this is a good start.
 
-To build the final executable, you need a jar with everyting that's under `src`. Though module-info isn't mandatory.
-Set `GRAALVM_HOME` to your graalvm installation dir. At runtime, please set `JAVAC_HOME` to the home of a jdk that is
-the same version as GraalVM (which can be GraalVM).
+To build the final executable, you need a jar with everyting that's under `src` compiled. Set `GRAALVM_HOME` to your
+graalvm installation dir.
 
 ```shell
-native-image -jar javac-native.jar javac-native
+native-image -jar native-jdktools.jar native-jdktools
 ```
 
-The final executable is 100% compatible with javac cli. You can also use additional properties for the native-image
-runtime. You can still use javac-native to compile for versions lower than the one it was compiled with by using
-the `--system`
-option.
+The resulting image weights 46 MB on my machine and took about 70 secs to compile.
+
+At runtime, please set `JDKTOOLS_HOME` to the home of a jdk. This JDK should be the same version as the one used to
+build the native image.
+
+The individual tools cli are accessible under the subcommand with their name.
 
 ## Benchmarks
 
-TODO but I went from 600ms to 70ms when compiling a couple files with it.
+TODO but I went from 600ms to 70ms when compiling a couple files with it. This entirely removes the jvm start and stop
+time so that's already a huge gain.

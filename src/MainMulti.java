@@ -7,9 +7,9 @@ public class MainMulti {
         // JAVAC_HOME should point to a jdk with the version used to build the current javac.
         // If you want to build for a jvm < current, you can pass the --system option to javac
         if (System.getProperty("java.home") == null) {
-            String jdkHome = System.getenv("JAVAC_HOME");
+            String jdkHome = System.getenv("JDKTOOLS_HOME");
             if (jdkHome == null || jdkHome.trim().isEmpty()) {
-                System.err.println("Error: Environment variable JAVAC_HOME is missing (or set property java.home)");
+                System.err.println("Error: Environment variable JDKTOOLS_HOME is missing (or set jvm property java.home)");
                 System.exit(1);
             }
             // We must set this property ourselves since we won't run in the JVM but as a native-image
