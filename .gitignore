@@ -1,8 +1,6 @@
-out/
-test/build
-test/jar
-test/javadoc
-test/jlink
+out/**
+test/**
+!test/Test.java
 .idea/
 *.class
 *.jar
