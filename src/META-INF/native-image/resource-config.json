@@ -3,6 +3,84 @@
     "includes": [
       {
         "pattern": "\\QMETA-INF/services/java.nio.file.spi.FileSystemProvider\\E"
+      },
+      {
+        "pattern": "java.base:\\Qjdk/internal/icu/impl/data/icudt67b/nfc.nrm\\E"
+      },
+      {
+        "pattern": "java.base:\\Qsun/text/resources/LineBreakIteratorData\\E"
+      },
+      {
+        "pattern": "java.base:\\Qsun/text/resources/SentenceBreakIteratorData\\E"
+      },
+      {
+        "pattern": "jdk.javadoc:\\Qjdk/javadoc/internal/doclets/formats/html/resources/glass.png\\E"
+      },
+      {
+        "pattern": "jdk.javadoc:\\Qjdk/javadoc/internal/doclets/formats/html/resources/jquery-ui.overrides.css\\E"
+      },
+      {
+        "pattern": "jdk.javadoc:\\Qjdk/javadoc/internal/doclets/formats/html/resources/script-dir/jquery-3.6.1.min.js\\E"
+      },
+      {
+        "pattern": "jdk.javadoc:\\Qjdk/javadoc/internal/doclets/formats/html/resources/script-dir/jquery-ui.min.css\\E"
+      },
+      {
+        "pattern": "jdk.javadoc:\\Qjdk/javadoc/internal/doclets/formats/html/resources/script-dir/jquery-ui.min.js\\E"
+      },
+      {
+        "pattern": "jdk.javadoc:\\Qjdk/javadoc/internal/doclets/formats/html/resources/search.js.template\\E"
+      },
+      {
+        "pattern": "jdk.javadoc:\\Qjdk/javadoc/internal/doclets/formats/html/resources/x.png\\E"
+      },
+      {
+        "pattern": "jdk.javadoc:\\Qjdk/javadoc/internal/doclets/toolkit/resources/releases/element-list-17.txt\\E"
+      },
+      {
+        "pattern": "jdk.javadoc:\\Qjdk/javadoc/internal/doclets/toolkit/resources/script.js\\E"
+      },
+      {
+        "pattern": "jdk.javadoc:\\Qjdk/javadoc/internal/doclets/toolkit/resources/stylesheet.css\\E"
+      },
+      {
+        "pattern": "jdk.jdeps:\\Qcom/sun/tools/jdeps/resources/jdk8_internals.txt\\E"
+      },
+      {
+        "pattern": "jdk.jlink:\\Qjdk/tools/jlink/internal/options\\E"
+      },
+      {
+        "pattern": "jdk.jlink:\\Qjdk/tools/jlink/internal/plugins/default_jli_trace.txt\\E"
+      },
+      {
+        "pattern": "jdk.jpackage:\\Qjdk/jpackage/internal/resources/JavaApp.ico\\E"
+      },
+      {
+        "pattern": "jdk.jpackage:\\Qjdk/jpackage/internal/resources/MsiInstallerStrings_en.wxl\\E"
+      },
+      {
+        "pattern": "jdk.jpackage:\\Qjdk/jpackage/internal/resources/MsiInstallerStrings_ja.wxl\\E"
+      },
+      {
+        "pattern": "jdk.jpackage:\\Qjdk/jpackage/internal/resources/MsiInstallerStrings_zh_CN.wxl\\E"
+      },
+      {
+        "pattern": "jdk.jpackage:\\Qjdk/jpackage/internal/resources/WinInstaller.template\\E"
+      },
+      {
+        "pattern": "jdk.jpackage:\\Qjdk/jpackage/internal/resources/WinLauncher.template\\E"
+      },
+      {
+        "pattern": "jdk.jpackage:\\Qjdk/jpackage/internal/resources/jpackageapplauncherw.exe\\E"
+      },
+      {
+        "pattern": "jdk.jpackage:\\Qjdk/jpackage/internal/resources/main.wxs\\E"
+      },
+      {
+        "pattern": "jdk.jpackage:\\Qjdk/jpackage/internal/resources/msiwrapper.exe\\E"
+      },
+      {
+        "pattern": "jdk.jpackage:\\Qjdk/jpackage/internal/resources/overrides.wxi\\E"
       }
     ]
   },
@@ -107,7 +185,8 @@
     {
       "name": "jdk.jpackage.internal.resources.WinResources",
       "locales": [
-        ""
+        "",
+        "und"
       ]
     },
     {

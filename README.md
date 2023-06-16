@@ -6,7 +6,7 @@ literally the reason GraalVM was created.
 
 Narrator : *This wasn't easy*
 
-Turns out, the native-image-agent doesn't detect everything that's needed. We also need special flags (*hidden flags*)
+Turns out, the native-image-agent doesn't detect everything that's needed. We also need special *hidden* flags
 at build time that are related to how javac and other tools work (reading jdk modules).
 
 ## native-image options
@@ -21,8 +21,7 @@ The final options are :
 | -H:+AllowJRTFileSystem        | The most important of all to allow it to work. Allows including `jdk.internal.jrtfs`. |
 | -Djdk.image.use.jvm.map=false | Can probably be replaced to use the `jimage` native library but I don't know how.     |
 
-More options could probably be used at build time and at runtime but this is a good start. `--gc=epsilon` should be
-removed if the final goal is to compile a über codebase.
+More options could probably be used at build time and at runtime but this is a good start.
 
 ## Compiling
 
@@ -33,7 +32,7 @@ to your graalvm installation dir.
 native-image -jar native-jdktools.jar native-jdktools
 ```
 
-The resulting image weights 44 MB on my machine and took about 75 secs to compile.
+The resulting image weights 56 MB on my machine and took about 98 secs to compile.
 
 At runtime, please set `JDKTOOLS_HOME` to the home of a jdk. This JDK should be the same version as the one used to
 build the native image.

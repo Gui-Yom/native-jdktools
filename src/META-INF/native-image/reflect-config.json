@@ -66,6 +66,22 @@
     "name": "java.security.SecureRandomParameters"
   },
   {
+    "name": "java.util.concurrent.atomic.AtomicBoolean",
+    "fields": [
+      {
+        "name": "value"
+      }
+    ]
+  },
+  {
+    "name": "java.util.concurrent.atomic.AtomicReference",
+    "fields": [
+      {
+        "name": "value"
+      }
+    ]
+  },
+  {
     "name": "javax.xml.stream.XMLStreamWriter",
     "methods": [
       {
